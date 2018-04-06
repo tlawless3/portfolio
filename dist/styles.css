@@ -1,0 +1,26 @@
+body{
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+#homeBackground{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100vh;
+  width: 100vw;
+  background-color: red;
+}
+
+#homeText{
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 30vh;
+}
+
+#homeName{
+  font-size: 65px;
+}
+
+#homeTitle{
+  font-size: 40px;
+}
