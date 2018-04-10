@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Card, Image } from 'semantic-ui-react'
+import { Card, Image, Grid } from 'semantic-ui-react'
 
 const PortfolioPieces = () => {
     let pieces = [ {
@@ -9,24 +9,26 @@ const PortfolioPieces = () => {
     }, {
       imageUrl: 'assets/jumpman.jpg',
       name: 'Jumpman',
-      description: "An uncopyrighted romp through the electrician Jumpman's world"
+      description: "An uncopyrighted romp through the electrician Jumpman's world."
     }, {
       imageUrl: 'assets/stash.jpg',
       name: 'Stash',
-      description: 'An online inventory management system with an emphasis on a functional GUI'
+      description: 'An online inventory management system with an emphasis on a functional GUI.'
     }, {
       imageUrl: 'assets/thebriefing.jpg',
       name: 'The Briefing',
       description: 'A news analysis website, plug in an article and see how others are reporting on the subject.'
     }];
     return (
-      <div id='portfolioCardWrapper'>
-        <Card.Group>
+      <div id='portfolioCardsWrapper'>
+        <div id='portfolioTitle'>
+          <p>Portfolio</p>
+        </div>
+        <Card.Group stackable={true} itemsPerRow={2}>
         {pieces.map( (piece, index) => {
           return (
-          <div key={index} className='portfolioCard'>
-            <Card>
-              <Image fluid='true' src={piece.imageUrl} />
+            <Card key={index} className='portfolioCard'>
+              <Image fluid src={piece.imageUrl} />
               <Card.Content>
                 <Card.Header>
                   {piece.name}
@@ -36,7 +38,6 @@ const PortfolioPieces = () => {
                 </Card.Description>
               </Card.Content>
             </Card>
-          </div>
           )
         })}
         </Card.Group>
