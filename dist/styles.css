@@ -1,19 +1,24 @@
 body{
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Ubuntu', sans-serif;
   background-color: red;
 }
 
 .portfolioCard{
-   background-color: red;
-  margin-left: 50px;
+  max-width: 600px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 #portfolioCardsWrapper{
-  position: absolute;
+  position: relative;
   margin-left: auto;
-  margin-top: 40px;
   top: 100vh;
   left: 0;
+}
+
+#portfolioTitle{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
 }
 
 #homeBackground{
@@ -32,9 +37,13 @@ body{
 }
 
 #homeName{
+  font-family: 'Ubuntu', sans-serif;
   font-size: 65px;
+  font-weight: 700;
 }
 
 #homeTitle{
+  font-family: 'Ubuntu', sans-serif;
   font-size: 40px;
+  font-weight: 700;
 }

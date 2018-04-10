@@ -21,11 +21,14 @@ const PortfolioPieces = () => {
     }];
     return (
       <div id='portfolioCardsWrapper'>
+        <div id='portfolioTitle'>
+          <p>Portfolio</p>
+        </div>
         <Card.Group stackable={true} itemsPerRow={2}>
         {pieces.map( (piece, index) => {
           return (
-            <Card key={index} centered={true} className='portfolioCard'>
-              <Image src={piece.imageUrl} />
+            <Card key={index} className='portfolioCard'>
+              <Image fluid src={piece.imageUrl} />
               <Card.Content>
                 <Card.Header>
                   {piece.name}
