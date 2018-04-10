@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Image} from 'semantic-ui-react'
 
 export default class Home extends Component {
   constructor(){
@@ -32,6 +33,12 @@ export default class Home extends Component {
   }
   render () {
     return (
+      <div>
+      <div id='homeBackgroundImage'>
+        <img src='assets/background.jpg' />
+      </div>
+      <div id='homeBackgroundTransparency'>
+      </div>
       <div id='homeBackground'>
         <div id='homeText'>
           <div id='homeName'>
@@ -42,6 +49,7 @@ export default class Home extends Component {
           </div>
         </div>
       </div>
+    </div>
     )
   }
 }
