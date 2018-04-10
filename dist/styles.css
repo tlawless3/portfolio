@@ -1,5 +1,5 @@
 body{
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   background-color: red;
 }
 
@@ -17,8 +17,19 @@ body{
 }
 
 #portfolioTitle{
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#homeBackgroundImage{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  min-width: 100vw !important;
+  min-height: 100vh !important;
+  overflow: hidden;
 }
 
 #homeBackground{
@@ -27,7 +38,16 @@ body{
   left: 0;
   height:100vh;
   width: 100vw;
-  background-color: red;
+}
+
+#homeBackgroundTransparency{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100vh;
+  width: 100vw;
+  opacity: .7;
+  background-color: #f41146;
 }
 
 #homeText{
@@ -37,13 +57,15 @@ body{
 }
 
 #homeName{
-  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
   font-size: 65px;
   font-weight: 700;
 }
 
 #homeTitle{
-  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
   font-size: 40px;
   font-weight: 700;
 }
