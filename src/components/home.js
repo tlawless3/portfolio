@@ -12,7 +12,7 @@ export default class Home extends Component {
   }
 
   componentDidMount(){
-    this.typeTitle()
+    setTimeout(() => {this.typeTitle()}, 300)
   }
 
   //gives 'typewriter' effect to text

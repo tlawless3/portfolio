@@ -3,15 +3,40 @@ body{
   background-color: red;
 }
 
+#contactInfoBackground{
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: #f41146;
+}
+
+#contactInfoWrapper{
+  color: white;
+  background-color: #f7657c;
+  margin-top: 25px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#contactTitle{
+  margin-bottom: -5px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 40px;
+}
+
+#email{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+}
+
 .portfolioCard{
   max-width: 600px !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
-#portfolioCardsWrapper{
+#bottomHalf{
   position: relative;
-  margin-left: auto;
   top: 100vh;
   left: 0;
 }
