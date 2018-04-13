@@ -1,12 +1,16 @@
 import React from 'react'
 import PortfolioPieces from './portfolioPieces'
 import Home from './home'
+import Contact from './contact'
 
 const LandingPage = () => {
   return (
     <div>
       <Home />
-      <PortfolioPieces />
+      <div id='bottomHalf'>
+        <PortfolioPieces />
+        <Contact />
+      </div>
     </div>
   )
 }
