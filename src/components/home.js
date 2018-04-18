@@ -33,7 +33,7 @@ export default class Home extends Component {
   }
   render () {
     return (
-      <div>
+    <div>
       <div id='homeBackgroundImage'>
         <img src='assets/background.jpg' />
       </div>
