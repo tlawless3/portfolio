@@ -108,5 +108,5 @@ body{
   z-index: 99;
   position: fixed;
   top: -5px;
-  left: -2px;
+  margin: none !important;
 }
