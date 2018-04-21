@@ -24,6 +24,10 @@ body{
   text-align: center;
 }
 
+#contactInfo a{
+  color: white !important;
+}
+
 #contactTitle{
   margin-bottom: -5px;
   font-family: 'Roboto Mono', monospace;
