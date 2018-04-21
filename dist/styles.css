@@ -1,4 +1,6 @@
 body{
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: 'Roboto Mono', monospace;
   background-color: red;
 }
@@ -8,6 +10,10 @@ body{
   height: 100%;
   z-index: 0;
   background-color: #f41146;
+}
+
+#contactInfo a{
+  color: white !important;
 }
 
 #contactInfoWrapper{
@@ -39,6 +45,7 @@ body{
   position: relative;
   top: 100vh;
   left: 0;
+  width: 100%;
 }
 
 #portfolioTitle{
@@ -51,7 +58,7 @@ body{
 #homeBackgroundImage{
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 0;
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
