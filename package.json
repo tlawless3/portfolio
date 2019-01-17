@@ -29,12 +29,12 @@
     "babel-preset-stage-2": "^6.24.1",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13",
-    "webpack-dev-server": "^3.1.1"
+    "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
     "compression": "^1.7.2",
     "express": "^4.16.3",
-    "morgan": "^1.9.0",
+    "morgan": "^1.9.1",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "react-router": "^4.2.0",
