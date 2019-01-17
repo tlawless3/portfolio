@@ -12,7 +12,7 @@ const PortfolioPieces = () => {
     imageUrl: 'assets/boozy.jpg',
     name: 'Boozy',
     description: 'A fully fledged e-commerce website. Customers can peruse and purchase wines.',
-    url: 'https://github.com/tlawless3/boozy'
+    url: 'https://boozy-store.herokuapp.com'
   }, {
     imageUrl: 'assets/jumpman.jpg',
     name: 'Jumpman',
@@ -29,54 +29,54 @@ const PortfolioPieces = () => {
     description: 'A news analysis website, plug in an article and see how others are reporting on the subject.',
     url: 'https://thebriefing.herokuapp.com/'
   }];
-  return ( <
-    div id = 'portfolioCardsWrapper' >
+  return (<
+    div id='portfolioCardsWrapper' >
     <
-    div id = 'portfolioTitle' >
-    <
+    div id='portfolioTitle' >
+      <
     p > Portfolio < /p> < /
     div > <
-    Card.Group stackable = {
-      true
-    }
-    itemsPerRow = {
-      2
-    } > {
-      pieces.map((piece, index) => {
-        return ( <
-          Card key = {
-            index
+    Card.Group stackable={
+            true
           }
-          className = 'portfolioCard' >
-          <
-          a target = "_blank"
-          href = {
-            piece.url
-          } >
-          <
-          Image fluid src = {
-            piece.imageUrl
-          }
-          /> < /
+          itemsPerRow={
+            2
+          } > {
+            pieces.map((piece, index) => {
+              return (<
+          Card key={
+                  index
+                }
+                className='portfolioCard' >
+                <
+          a target="_blank"
+                  href={
+                    piece.url
+                  } >
+                  <
+                    Image fluid src={
+                      piece.imageUrl
+                    }
+                  /> < /
           a > <
           Card.Content >
-          <
+                    <
           Card.Header > {
-            piece.name
-          } <
+                        piece.name
+                      } <
           /Card.Header> <
           Card.Description > {
-            piece.description
-          } <
+                          piece.description
+                        } <
           /Card.Description> < /
           Card.Content > <
           /Card>
-        )
-      })
+                      )
+                    })
     } <
     /Card.Group> < /
     div >
-  )
-}
-
+                      )
+                    }
+                    
 export default PortfolioPieces
